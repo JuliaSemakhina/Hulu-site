@@ -278,13 +278,68 @@ h4 {
 
 /*Live Sports*/
 
-.live-sports {
-    background: url('../images/live-sports.jpg') no-repeat center center / cover;
-    height: 800px;
+.sport-list {
+    margin-top: 3px;
+    position: absolute;
+    z-index: 30;
+}
+
+.sport-list .tabs {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sport-list .tabs .tab {
+  display:  block;
+}
+
+.sport-list .tabs .tab a[data-switcher] {
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color:  #fff;
+  background-color: royalblue;
+  cursor:  pointer;
+}
+
+.sport-list .tabs .tab:hover a[data-switcher] {
+  background-color:  #f7a800;
+}
+
+.sport-list .tabs .tab.is-active a[data-switcher] {
+  background-color:  #f7a800;
+  font-weight:  700;
+}
+
+.pages .page {
+  display:  none;
+  height: 800px;
     position: relative;
 }
 
-.live-sports-content {
+.pages .page.is-active {
+  display:  block;
+}
+
+
+.page:nth-of-type(1){
+  background: url('../images/live-sports.jpg') no-repeat center center / cover;   
+}
+
+.page:nth-of-type(2){
+   background: url('../images/breaking-news.jpg') no-repeat center center / cover;
+}
+
+.page:nth-of-type(3){
+   background: url('../images/biggest-events.jpg') no-repeat center center / cover;
+}
+
+.live-sports {
+     
+}
+
+.content {
     position: absolute;
     top: 160px;
     left: 100px;
@@ -311,6 +366,8 @@ h4 {
 .live-sports-logo img {
     width: 40px;
 }
+
+
 
 
 /*Footer*/

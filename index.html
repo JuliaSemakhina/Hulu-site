@@ -90,7 +90,19 @@
     </section>
 
     <section class="live-sports">
-        <div class="live-sports-content">
+        <div class="sport-list">
+            <ul class="tabs">
+                <li class="tab is-active">
+                    <a data-switcher data-tab="1">live sports</a></li>
+                <li class="tab">
+                    <a data-switcher data-tab="2">breaking news</a></li>
+                <li class="tab">
+                    <a data-switcher data-tab="3">biggest events</a></li>
+            </ul>
+        </div>
+        <section class="pages">
+        <div class="live-sports-content page is-active" data-page="1">
+            <div class="content">
             <div class="text-xl">Live Sports</div>
             <div class="sub-text">Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.
             </div>
@@ -107,11 +119,22 @@
                 <div>
                     <img src="images/live-sports-logo-4.png" alt="logo-4">
                 </div>
+
             </div>
             <div class="legal-text">
                 Live TV plan required. Regional restrictions, blackouts and additional terms apply. See details
             </div>
         </div>
+        </div>
+        <div class="page" data-page="2">
+           <h2>Page 2</h2>
+           <p>Welcome to the about page</p>
+         </div>
+         <div class="page" data-page="3">
+           <h2>Page 3</h2>
+           <p>Welcome to the services page</p>
+         </div>
+        </section>
     </section>
 
     <footer class="footer">
